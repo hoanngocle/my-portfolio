@@ -3,7 +3,7 @@ import Logo from './Logo';
 import CustomLink from './elements/CustomLink';
 import SocialIcon from './SocialIcon';
 
-function NavBar() {
+function Header() {
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
             <nav>
@@ -22,4 +22,4 @@ function NavBar() {
     );
 }
 
-export default NavBar;
+export default Header;
