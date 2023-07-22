@@ -22,7 +22,7 @@ module.exports = {
                 primaryDark: '#58E609'
             },
             animation: {
-                'spin-slow': 'spin 5s linear infinite'
+                'spin-slow': 'spin 8s linear infinite'
             }
         }
     },

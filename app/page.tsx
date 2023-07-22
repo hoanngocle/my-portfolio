@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import profilePic from './../public/images/profile/developer-pic-1.png';
-import AnimatedText from './components/AnimatedText';
+import AnimatedText from './components/elements/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from './components/Icons';
 import Layout from './components/Layout';
 import HireMe from './components/HireMe';
+import lightBulb from './../public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
     return (
@@ -45,6 +46,9 @@ export default function Home() {
                 </div>
             </Layout>
             <HireMe />
+            <div className='absolute right-8 inline-block w-24'>
+                <Image src={lightBulb} alt={'IMACODER'} className='w-full h-auto' />
+            </div>
         </article>
     );
 }
