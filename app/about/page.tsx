@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import profilePic from '../../public/images/profile/developer-pic-2.jpg';
 import Image from 'next/image';
 import AnimatedNumbers from '../components/elements/AnimatedNumbers';
+import Skill from '../components/Skill';
 
 export const metadata: Metadata = {
     title: 'Dev Dreaming | About',
@@ -63,6 +64,8 @@ export default function About() {
                         </div>
                     </div>
                 </div>
+
+                <Skill></Skill>
             </Layout>
         </article>
     );
