@@ -2,7 +2,7 @@
 
 import { motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
-import Detail from './elements/Detail';
+import DetailExperience from './elements/DetailExperience';
 
 function Experience() {
     const ref = useRef(null);
@@ -18,10 +18,10 @@ function Experience() {
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top'
+                    className='absolute left-9 top-[2px] w-[4px] h-full bg-dark origin-top'
                 ></motion.div>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
-                    <Detail
+                    <DetailExperience
                         position='Software Engineer'
                         company='Google'
                         companyLink='https://google.com'
@@ -33,7 +33,7 @@ function Experience() {
                         visualization"
                     />
 
-                    <Detail
+                    <DetailExperience
                         position='Software Engineer'
                         company='Google'
                         companyLink='https://google.com'
@@ -45,7 +45,7 @@ function Experience() {
                         visualization"
                     />
 
-                    <Detail
+                    <DetailExperience
                         position='Software Engineer'
                         company='Google'
                         companyLink='https://google.com'
@@ -57,7 +57,7 @@ function Experience() {
                         visualization"
                     />
 
-                    <Detail
+                    <DetailExperience
                         position='Software Engineer'
                         company='Google'
                         companyLink='https://google.com'

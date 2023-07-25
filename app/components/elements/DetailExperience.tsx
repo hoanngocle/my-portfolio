@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import LiIcon from './LiIcon';
 import { motion } from 'framer-motion';
 
-type DetailParams = {
+type DetailExperienceParams = {
     position: string;
     company: string;
     companyLink: string;
@@ -11,7 +11,7 @@ type DetailParams = {
     work: string;
 };
 
-const Detail = ({ position, company, companyLink, time, address, work }: DetailParams) => {
+const DetailExperience = ({ position, company, companyLink, time, address, work }: DetailExperienceParams) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
@@ -32,4 +32,4 @@ const Detail = ({ position, company, companyLink, time, address, work }: DetailP
     );
 };
 
-export default Detail;
+export default DetailExperience;
