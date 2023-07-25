@@ -22,48 +22,39 @@ function Education() {
                 ></motion.div>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <DetailEducation
-                        position='Software Engineer'
-                        company='Google'
-                        companyLink='https://google.com'
-                        time='2022-Present '
-                        address='Mountain View'
-                        work="Worked on a team
+                        type='Software Engineer'
+                        time='https://google.com'
+                        place='2022-Present '
+                        info="Worked on a team
                         responsible for developing new features for Google's search engine, including improving the
                         accuracy and relevance of search results and developing new tools for data analysis and
                         visualization"
                     />
 
                     <DetailEducation
-                        position='Software Engineer'
-                        company='Google'
-                        companyLink='https://google.com'
-                        time='2022-Present '
-                        address='Mountain View'
-                        work="Worked on a team
+                        type='Software Engineer'
+                        time='https://google.com'
+                        place='2022-Present '
+                        info="Worked on a team
                         responsible for developing new features for Google's search engine, including improving the
                         accuracy and relevance of search results and developing new tools for data analysis and
                         visualization"
                     />
 
                     <DetailEducation
-                        position='Software Engineer'
-                        company='Google'
-                        companyLink='https://google.com'
-                        time='2022-Present '
-                        address='Mountain View'
-                        work="Worked on a team
+                        type='Software Engineer'
+                        time='https://google.com'
+                        place='2022-Present '
+                        info="Worked on a team
                         responsible for developing new features for Google's search engine, including improving the
                         accuracy and relevance of search results and developing new tools for data analysis and
                         visualization"
                     />
-
                     <DetailEducation
-                        position='Software Engineer'
-                        company='Google'
-                        companyLink='https://google.com'
-                        time='2022-Present '
-                        address='Mountain View'
-                        work="Worked on a team
+                        type='Software Engineer'
+                        time='https://google.com'
+                        place='2022-Present '
+                        info="Worked on a team
                         responsible for developing new features for Google's search engine, including improving the
                         accuracy and relevance of search results and developing new tools for data analysis and
                         visualization"

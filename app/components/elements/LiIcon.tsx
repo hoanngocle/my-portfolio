@@ -14,6 +14,7 @@ const LiIcon = ({ reference }: { reference: any }) => {
                     cy='50'
                     r='20'
                     className='stroke-[5px] fill-light'
+                    initial={{ pathLength: 0 }}
                     style={{ pathLength: scrollYProgress }}
                 />
                 <circle cx='75' cy='50' r='10' className='animate-pulse stroke-1 fill-primary' />
