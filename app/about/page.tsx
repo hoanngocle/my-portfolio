@@ -6,6 +6,7 @@ import Image from 'next/image';
 import AnimatedNumbers from '../components/elements/AnimatedNumbers';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
+import Education from '../components/Education';
 
 export const metadata: Metadata = {
     title: 'Dev Dreaming | About',
@@ -68,6 +69,7 @@ export default function About() {
 
                 <Skills></Skills>
                 <Experience></Experience>
+                <Education></Education>
             </Layout>
         </article>
     );
