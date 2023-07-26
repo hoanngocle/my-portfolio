@@ -4,6 +4,7 @@ import AnimatedText from '../components/elements/AnimatedText';
 import Layout from '../components/Layout';
 import FeaturedProject from '../components/FeaturedProject';
 import ProjectCrypto from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import Project from '../components/Project';
 
 type Props = {};
 
@@ -18,7 +19,7 @@ const Projects = (props: Props) => {
             <Layout className=''>
                 <AnimatedText className='mb-16' text='Imagination Trumps Knowledge!'></AnimatedText>
 
-                <div className='grid grid-cols-12 gap-24'>
+                <div className='grid grid-cols-12 gap-24 gap-y-32'>
                     <div className='col-span-12'>
                         <FeaturedProject
                             type={'Featured Project'}
@@ -29,18 +30,61 @@ page transitions, cool background effects, unique design and it is mobile respon
                             img={ProjectCrypto}
                             link={'/'}
                             github={'/'}
-                        ></FeaturedProject>
+                        />
                     </div>
 
-                    <div className='col-span-6'>Project-1</div>
+                    <div className='col-span-6'>
+                        <Project
+                            type={'Featured Project'}
+                            title={'React Portfolio Website'}
+                            img={ProjectCrypto}
+                            link={'/'}
+                            github={'/'}
+                        />
+                    </div>
 
-                    <div className='col-span-6'>Project-2</div>
+                    <div className='col-span-6'>
+                        <Project
+                            type={'Featured Project'}
+                            title={'React Portfolio Website'}
+                            img={ProjectCrypto}
+                            link={'/'}
+                            github={'/'}
+                        />
+                    </div>
 
-                    <div className='col-span-12'>Featured Project</div>
+                    <div className='col-span-12'>
+                        <FeaturedProject
+                            type={'Featured Project'}
+                            title={'React Portfolio Website'}
+                            summary='A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
+page transitions, cool background effects, unique design and it is mobile responsive.
+'
+                            img={ProjectCrypto}
+                            link={'/'}
+                            github={'/'}
+                        />
+                    </div>
 
-                    <div className='col-span-6'>Project-3</div>
+                    <div className='col-span-6'>
+                        <Project
+                            type={'Featured Project'}
+                            title={'React Portfolio Website'}
+                            img={ProjectCrypto}
+                            link={'/'}
+                            github={'/'}
+                        />
+                    </div>
 
-                    <div className='col-span-6'>Project-4</div>
+                    <div className='col-span-6'>
+                        <Project
+                            type={'Featured Project'}
+                            title={'React Portfolio Website'}
+                            img={ProjectCrypto}
+                            link={'/'}
+                            github={'/'}
+                        />
+                    </div>
                 </div>
             </Layout>
         </article>

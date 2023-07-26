@@ -14,7 +14,9 @@ type Props = {
 
 const FeaturedProject = (props: Props) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-xl'>
+        <article className='w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 '>
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
+
             <Link href={props.link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg '>
                 <Image src={props.img} alt={props.title} className='w-full h-auto' />
             </Link>
