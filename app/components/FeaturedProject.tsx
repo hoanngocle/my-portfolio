@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { GithubIcon } from './Icons';
+import { motion } from 'framer-motion';
 
 type Props = {
     type: string;
@@ -11,6 +12,7 @@ type Props = {
     link: string;
     github: string;
 };
+const FramerImage = motion(Image);
 
 const FeaturedProject = (props: Props) => {
     return (
@@ -18,7 +20,13 @@ const FeaturedProject = (props: Props) => {
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
 
             <Link href={props.link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg '>
-                <Image src={props.img} alt={props.title} className='w-full h-auto' />
+                <FramerImage
+                    src={props.img}
+                    alt={props.title}
+                    className='w-full h-auto'
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl'>{props.type}</span>

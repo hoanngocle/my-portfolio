@@ -2,7 +2,9 @@ import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { GithubIcon } from './Icons';
+import { motion } from 'framer-motion';
 
+const FramerImage = motion(Image);
 type Props = {
     title: string;
     type: string;
@@ -17,7 +19,13 @@ const Project = (props: Props) => {
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
 
             <Link href={props.link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg '>
-                <Image src={props.img} alt={props.title} className='w-full h-auto' />
+                <FramerImage
+                    src={props.img}
+                    alt={props.title}
+                    className='w-full h-auto'
+                    whileHover={{ scale: 1.5 }}
+                    transition={{ duration: 0.2 }}
+                />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary font-medium text-xl'>{props.type}</span>
