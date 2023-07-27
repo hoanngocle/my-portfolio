@@ -1,8 +1,11 @@
+'use client';
+
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { GithubIcon } from './Icons';
 import { motion } from 'framer-motion';
+import DarkBackground from './elements/DarkBackground';
 
 const FramerImage = motion(Image);
 type Props = {
@@ -16,14 +19,14 @@ type Props = {
 const Project = (props: Props) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+            <DarkBackground />
 
             <Link href={props.link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg '>
                 <FramerImage
                     src={props.img}
                     alt={props.title}
                     className='w-full h-auto'
-                    whileHover={{ scale: 1.5 }}
+                    whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.2 }}
                 />
             </Link>

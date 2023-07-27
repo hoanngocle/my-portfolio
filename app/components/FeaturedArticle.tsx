@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import DarkBackground from './elements/DarkBackground';
 
 const FramerImage = motion(Image);
 
@@ -17,7 +18,9 @@ type Props = {
 
 const FeaturedArticle = (props: Props) => {
     return (
-        <li className='col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+            <DarkBackground />
+
             <Link
                 href={props.link}
                 target='_blank'
