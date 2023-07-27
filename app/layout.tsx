@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='en'>
             <body>
-                <main className={`${montserrat.className} font-mont bg-light w-full min-h-screen`}>
+                <main className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
                     <Header />
                     {children}
                     <Footer />
