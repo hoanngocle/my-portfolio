@@ -18,7 +18,7 @@ type Props = {
 
 const FeaturedArticle = (props: Props) => {
     return (
-        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl dark:bg-dark dark:border-light'>
             <DarkBackground />
 
             <Link
@@ -36,11 +36,13 @@ const FeaturedArticle = (props: Props) => {
             </Link>
 
             <Link href={props.link} target='_blank' className='hover:underline underline-offset-2'>
-                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline'>{props.title}</h2>
+                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline dark:text-light'>
+                    {props.title}
+                </h2>
             </Link>
 
-            <p className='text-sm mb-2'>{props.summary}</p>
-            <span className='text-primary font-semibold'>{props.time}</span>
+            <p className='text-sm mb-2 dark:text-light'>{props.summary}</p>
+            <span className='text-primary dark:text-primaryDark font-semibold'>{props.time}</span>
         </li>
     );
 };

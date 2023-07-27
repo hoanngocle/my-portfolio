@@ -15,12 +15,12 @@ export const metadata: Metadata = {
 
 export default function About() {
     return (
-        <article className='flex flex-col items-center w-full justify-center'>
+        <article className='flex flex-col items-center w-full justify-center dark:text-light'>
             <Layout className='pt-16'>
                 <AnimatedText text='Passion Fuels Purpose!' className='mb-16' />
                 <div className='grid w-full grid-cols-8 gap-16'>
                     <div className='col-span-3 flex flex-col items-start justify-start'>
-                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+                        <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                         <p className='font-medium'>
                             Hi, Im CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful,
                             functional, and user-centered digital experiences. With 4 years of experience in the field.
@@ -38,8 +38,8 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8'>
-                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+                    <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light'>
+                        <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
                         <Image src={profilePic} alt='DevDreaming' className='w-full h-auto rounded-2xl' />
                     </div>
 

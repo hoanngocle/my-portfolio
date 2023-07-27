@@ -1,5 +1,7 @@
 const DarkBackground = () => {
-    return <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />;
+    return (
+        <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light' />
+    );
 };
 
 export default DarkBackground;

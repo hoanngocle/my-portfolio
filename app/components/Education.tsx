@@ -18,7 +18,7 @@ function Education() {
             <div ref={ref} className='w-[75%] mx-auto relative'>
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className='absolute left-9 top-[2px] w-[4px] h-full bg-dark origin-top'
+                    className='absolute left-9 top-[2px] w-[4px] h-full bg-dark origin-top dark:bg-light'
                 ></motion.div>
                 <ul className='w-full flex flex-col items-start justify-between ml-4'>
                     <DetailEducation

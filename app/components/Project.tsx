@@ -18,7 +18,7 @@ type Props = {
 
 const Project = (props: Props) => {
     return (
-        <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative'>
+        <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:border-light dark:bg-dark'>
             <DarkBackground />
 
             <Link href={props.link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg '>
@@ -31,7 +31,7 @@ const Project = (props: Props) => {
                 />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
-                <span className='text-primary font-medium text-xl'>{props.type}</span>
+                <span className='text-primary dark:text-primaryDark font-medium text-xl'>{props.type}</span>
 
                 <Link href={props.link} target='_blank' className='hover:underline underline-offset-2'>
                     <h2 className='my-2 w-full text-left text-3xl font-bold'>{props.title}</h2>

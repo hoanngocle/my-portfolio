@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Script from 'next/script';
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -24,6 +25,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Footer />
                 </main>
             </body>
+            <Script id='theme-switcher' strategy='beforeInteractive'>
+                {` 
+                    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                        document.documentElement.classList.add('dark')
+                    } else {
+                        document.documentElement.classList.remove('dark')
+                    }
+                `}
+            </Script>
         </html>
     );
 }

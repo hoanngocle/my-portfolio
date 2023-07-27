@@ -39,7 +39,7 @@ const Articles = (props: Props) => {
                     />
                 </ul>
 
-                <h2 className='font-bold text-4xl w-full text-center my-16 mt-32'>All Articles</h2>
+                <h2 className='font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light'>All Articles</h2>
                 <ul>
                     <Article
                         img={Article1}

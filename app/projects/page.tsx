@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Projects = (props: Props) => {
     return (
-        <article className='flex flex-col items-center w-full justify-center'>
+        <article className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className=''>
                 <AnimatedText className='mb-16' text='Imagination Trumps Knowledge!'></AnimatedText>
 
