@@ -2,9 +2,12 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon } from './Icons';
+import { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from './Icons';
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 function SocialIcon() {
+    const [mode, setMode] = useThemeSwitcher();
+
     return (
         <nav className='flex items-center justify-center flex-wrap'>
             <motion.a
@@ -52,6 +55,9 @@ function SocialIcon() {
             >
                 <DribbbleIcon className='' />
             </motion.a>
+            <button onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
+                {mode === 'dark' ? <SunIcon className={'fill-dark'} /> : <MoonIcon className={'fill-dark'} />}
+            </button>
         </nav>
     );
 }
