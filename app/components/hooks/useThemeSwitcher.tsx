@@ -1,8 +1,4 @@
 import { useEffect, useState } from 'react';
-type IModeProps = {
-    mode: string;
-    setValue: string;
-};
 
 const useThemeSwitcher = () => {
     const preferDarkQuery = '(prefer-color-scheme: dark)';
