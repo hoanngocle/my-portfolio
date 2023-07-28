@@ -6,6 +6,12 @@ import SocialIcon from './SocialIcon';
 function Header() {
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light'>
+            <button className='flex flex-col justify-center items-center'>
+                <span className='bg:dark dark:bg-light block h-0.5 w-6 rounded-sm -translate-y-0.5'></span>
+                <span className='bg:dark dark:bg-light block h-0.5 w-6 rounded-sm '></span>
+                <span className='bg:dark dark:bg-light block h-0.5 w-6 rounded-sm -translate-y-0.5 '></span>
+            </button>
+
             <nav>
                 <CustomLink href='/' title='Home' className='mr-4' />
                 <CustomLink href='/about' title='About' className='mx-4' />
