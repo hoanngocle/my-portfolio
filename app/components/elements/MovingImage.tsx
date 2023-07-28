@@ -41,6 +41,10 @@ const MovingImage = (props: PropsImage) => {
                 src={props.img}
                 alt={props.title}
                 className='w-96 h-auto hidden absolute rounded-lg z-10'
+                priority
+                sizes='(max-width: 768px) 100vw,
+                        (max-width: 1200px) 50vw,
+                        50vw'
             />
         </Link>
     );
