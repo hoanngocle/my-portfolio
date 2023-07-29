@@ -58,7 +58,7 @@ export default function Home() {
             <div className='absolute right-8 inline-block w-24 md:hidden'>
                 <Image
                     src={lightBulb}
-                    alt={'IMACODER'}
+                    alt={'lightBulb'}
                     className='w-full h-auto'
                     priority
                     sizes='(max-width: 768px) 100vw,

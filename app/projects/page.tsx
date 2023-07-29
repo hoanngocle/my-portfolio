@@ -13,13 +13,16 @@ export const metadata: Metadata = {
     description: 'My portfolio create by Nyx'
 };
 
-const Projects = (props: Props) => {
+const Projects = () => {
     return (
         <article className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
             <Layout className=''>
-                <AnimatedText className='mb-16' text='Imagination Trumps Knowledge!'></AnimatedText>
+                <AnimatedText
+                    className='mb-16 lg:!text-6xl sm:!mb-8 sm:text-6xl xs:!text-4xl'
+                    text='Imagination Trumps Knowledge!'
+                />
 
-                <div className='grid grid-cols-12 gap-24 gap-y-32'>
+                <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
                             type={'Featured Project'}
@@ -33,7 +36,7 @@ page transitions, cool background effects, unique design and it is mobile respon
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             type={'Featured Project'}
                             title={'React Portfolio Website'}
@@ -43,7 +46,7 @@ page transitions, cool background effects, unique design and it is mobile respon
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             type={'Featured Project'}
                             title={'React Portfolio Website'}
@@ -66,7 +69,7 @@ page transitions, cool background effects, unique design and it is mobile respon
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             type={'Featured Project'}
                             title={'React Portfolio Website'}
@@ -76,7 +79,7 @@ page transitions, cool background effects, unique design and it is mobile respon
                         />
                     </div>
 
-                    <div className='col-span-6'>
+                    <div className='col-span-6 sm:col-span-12'>
                         <Project
                             type={'Featured Project'}
                             title={'React Portfolio Website'}

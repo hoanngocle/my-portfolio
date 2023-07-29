@@ -40,7 +40,7 @@ const FeaturedArticle = (props: Props) => {
             </Link>
 
             <Link href={props.link} target='_blank' className='hover:underline underline-offset-2'>
-                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline dark:text-light'>
+                <h2 className='capitalize text-2xl font-bold my-2 mt-4 hover:underline dark:text-light xs:text-lg'>
                     {props.title}
                 </h2>
             </Link>

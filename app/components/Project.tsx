@@ -35,17 +35,19 @@ const Project = (props: Props) => {
                 />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
-                <span className='text-primary dark:text-primaryDark font-medium text-xl'>{props.type}</span>
+                <span className='text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base'>
+                    {props.type}
+                </span>
 
                 <Link href={props.link} target='_blank' className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-3xl font-bold'>{props.title}</h2>
+                    <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>{props.title}</h2>
                 </Link>
 
                 <div className='w-full mt-2 flex items-center justify-between'>
-                    <Link href={props.link} target='_blank' className='text-lg font-semibold underline'>
+                    <Link href={props.link} target='_blank' className='text-lg font-semibold underline md:text-base'>
                         Visit
                     </Link>
-                    <Link href={props.github} target='_blank' className='w-10'>
+                    <Link href={props.github} target='_blank' className='w-8 md:w-6'>
                         <GithubIcon className='' />
                     </Link>
                 </div>
