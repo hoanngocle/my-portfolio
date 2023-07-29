@@ -37,7 +37,7 @@ type AnimatedTextParam = {
 
 function AnimatedText({ text, className = '' }: AnimatedTextParam) {
     return (
-        <div className='w-full mx-auto flex items-center justify-center text-center '>
+        <div className='w-full mx-auto flex items-center justify-center text-center sm:py-0'>
             <motion.h1
                 className={`inline-block w-full text-dark font-bold capitalize text-8xl !leading-tight dark:text-light ${className}`}
                 variants={quote}
