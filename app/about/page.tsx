@@ -7,7 +7,6 @@ import AnimatedNumbers from '../components/elements/AnimatedNumbers';
 import Skills from '../components/Skills';
 import Experience from '../components/Experience';
 import Education from '../components/Education';
-import TransitionEffect from '../components/TransitionEffect';
 
 export const metadata: Metadata = {
     title: 'Dev Dreaming | About',
@@ -17,8 +16,6 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <article className='flex flex-col items-center w-full justify-center dark:text-light'>
-            <TransitionEffect />
-
             <Layout className='pt-16'>
                 <AnimatedText
                     text='Passion Fuels Purpose!'
