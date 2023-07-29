@@ -9,13 +9,13 @@ function SocialIcon() {
     const [mode, setMode] = useThemeSwitcher();
 
     return (
-        <nav className='flex items-center justify-center flex-wrap'>
+        <nav className='flex items-center justify-center flex-wrap mt-2'>
             <motion.a
                 href='https://twitter.com'
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-6 mr-3'
+                className='w-6 mr-3 sm:mx-1'
             >
                 <TwitterIcon className='' />
             </motion.a>
@@ -24,7 +24,7 @@ function SocialIcon() {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-6 mx-3'
+                className='w-6 mx-3 sm:mx-1 bg-light rounded-full dark:bg-dark'
             >
                 <GithubIcon className='' />
             </motion.a>
@@ -33,7 +33,7 @@ function SocialIcon() {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-6 mx-3'
+                className='w-6 mx-3 sm:mx-1'
             >
                 <LinkedInIcon className='' />
             </motion.a>
@@ -42,7 +42,7 @@ function SocialIcon() {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-6 mx-3 bg-light rounded-full'
+                className='w-6 mx-3 sm:mx-1 bg-light rounded-full'
             >
                 <PinterestIcon className='' />
             </motion.a>
@@ -51,7 +51,7 @@ function SocialIcon() {
                 target={'_blank'}
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                className='w-6 ml-3'
+                className='w-6 mx-3 sm:mx-1'
             >
                 <DribbbleIcon className='' />
             </motion.a>
