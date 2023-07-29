@@ -32,9 +32,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body>
                 <main className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
-                    <Header />
-                    <TransitionEffect>{children}</TransitionEffect>
-                    <Footer />
+                    <TransitionEffect>
+                        <Header />
+                        {children}
+                        <Footer />
+                    </TransitionEffect>
                 </main>
             </body>
         </html>
