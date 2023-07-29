@@ -4,6 +4,7 @@ import { Montserrat } from 'next/font/google';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Script from 'next/script';
+import TransitionEffect from './components/TransitionEffect';
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body>
                 <main className={`${montserrat.className} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
                     <Header />
-                    {children}
+                    <TransitionEffect>{children}</TransitionEffect>
                     <Footer />
                 </main>
             </body>
